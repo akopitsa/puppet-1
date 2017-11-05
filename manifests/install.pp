@@ -1,6 +1,5 @@
 class ssh::install(
-    $package_name = $::ssh::params::package_name,
-    $service_name = $::ssh::params::service_name,
+    String $package_name = $::ssh::params::package_name,
 ) {
     package {'ssh-package':
       ensure => present,
