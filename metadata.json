@@ -1,0 +1,15 @@
+{
+  "name": "andrey24may-ssh",
+  "version": "0.1.0",
+  "author": "Andrey Kopitsa <andrey.kopitsa@gmail.com>",
+  "summary": "Thgis module will manage ssh",
+  "license": "Apache-2.0",
+  "source": "https://github.com/akopitsa/puppet-1",
+  "project_page": "https://github.com/akopitsa/puppet-1",
+  "issues_url": "https://github.com/akopitsa/puppet-1/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
