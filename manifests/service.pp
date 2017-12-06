@@ -7,7 +7,6 @@ class ssh::service(
   Boolean $service_enable = $::ssh::service_enable
 ) {
   service {'ssh-service':
-    #ensure     => running,
     ensure     => $service_ensure,
     name       => $service_name,
     enable     => $service_enable,
