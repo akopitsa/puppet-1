@@ -1,7 +1,7 @@
 function ssh::data {
   $base_params = {
     'ssh::ensure' => 'present',
-    'ssh::service_enable' => true,
+    'ssh::service_enable' => false,
     'ssh::service_ensure' => 'running',
   }
 
