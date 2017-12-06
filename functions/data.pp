@@ -1,8 +1,8 @@
 function ssh::data {
   $base_params = {
-    'ssh::ensure'         => 'present',
+    'ssh::ensure' => 'present',
     'ssh::service_enable' => true,
-    'ssh::service_ensure' => 'running',
+    'ssh::service_ensure' => 'stopped',
   }
 
   case $facts['os']['family'] {
