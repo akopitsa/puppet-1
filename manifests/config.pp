@@ -1,7 +1,8 @@
 # Class: nassh::config
 #
 class ssh::config (
-  $permit_root_login = $::ssh::permit_root_login,
+  $permit_root_login    = $::ssh::permit_root_login,
+  $port                 = $::ssh::port,
 ){
   # resources
   file { '/etc/ssh/sshd_config':
