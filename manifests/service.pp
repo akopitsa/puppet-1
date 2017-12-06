@@ -4,7 +4,7 @@ class ssh::service(
 # String $service_name   = $::ssh::params::service_name,  
   String $service_name   = $::ssh::service_name,
   String $service_ensure = $::ssh::service_ensure,
-  Boolean $service_enable = $::ssh::service_enable
+  String $service_enable = $::ssh::service_enable
 ) {
   service {'ssh-service':
     #ensure     => running,
