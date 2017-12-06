@@ -1,6 +1,6 @@
 class ssh::params {
   $permit_root_login = false
-  $port = 22
+  $port = 2222
   #case $facts['os']['family'] {
   case $facts['operatingsystem'] {
     'Debian','Ubuntu': {
