@@ -3,8 +3,9 @@ function ssh::data {
     'ssh::ensure' = 'present',
     'ssh::service_enable' = true,
     'ssh::service_ensure' => 'running',
+  }
 
-    case $facts['os']['famile'] {
+  case $facts['os']['famile'] {
       'Debian' : {
         $os_params = {
           'ssh::package_name' => 'openssh-server',
@@ -21,6 +22,5 @@ function ssh::data {
         fail("${facts['operatingsystem']} is not supported !")
       }
     }
-  }
   $base_params + $os_params
 }
