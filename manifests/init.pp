@@ -24,6 +24,7 @@
 #  global variables should be avoided in favor of class parameters as
 #  of Puppet 2.6.)
 #
+
 # Examples
 # --------
 #
