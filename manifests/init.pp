@@ -46,7 +46,7 @@ class ssh(
   Boolean $permit_root_login   = $::ssh::params::permit_root_login,
   String $package_name         = $::ssh::params::package_name,
   String $service_name         = $::ssh::params::service_name,
-  Int $port                    = $::ssh::params::port
+  Integer $port                    = $::ssh::params::port
 ) inherits ::ssh::params {
   class {'ssh::install': }
   class {'ssh::config': }
