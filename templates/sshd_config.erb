@@ -40,6 +40,8 @@ SyslogFacility AUTHPRIV
 #LoginGraceTime 2m
 <% if @permit_root_login %>
 PermitRootLogin yes
+<% else %>
+PermitRootLogin no
 <% end %>
 #StrictModes yes
 #MaxAuthTries 6
