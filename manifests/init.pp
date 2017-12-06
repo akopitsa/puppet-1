@@ -24,7 +24,6 @@
 #  global variables should be avoided in favor of class parameters as
 #  of Puppet 2.6.)
 #
-
 # Examples
 # --------
 #
@@ -44,31 +43,11 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class ssh(
-## Start section  
-## with params and without function
-##
-#  Boolean $permit_root_login   = $::ssh::params::permit_root_login,
-#  String $package_name         = $::ssh::params::package_name,
-#  String $service_name         = $::ssh::params::service_name,
-#  Integer $port                    = $::ssh::params::port
-#) inherits ::ssh::params {
-##  
-## with params and without function
-## end section
-## Start section  
-## without params and with function
-##
-String $package_name,
-String $service_name,
-String $ensure,
-Boolean $service_enable,
-String $service_ensure,
-Boolean $permit_root_login = false,
-Integer $port              = 22,
-) {
-##  
-## without params and with function
-## end section
+  Boolean $permit_root_login   = $::ssh::params::permit_root_login,
+  String $package_name         = $::ssh::params::package_name,
+  String $service_name         = $::ssh::params::service_name,
+  Integer $port                    = $::ssh::params::port
+) inherits ::ssh::params {
   class {'ssh::install': }
   class {'ssh::config': }
   class {'ssh::service': }
