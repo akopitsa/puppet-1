@@ -1,4 +1,5 @@
 class ssh::params {
+  $permit_root_login = false
   #case $facts['os']['family'] {
   case $facts['operatingsystem'] {
     'Debian','Ubuntu': {
