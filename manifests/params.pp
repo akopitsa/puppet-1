@@ -8,7 +8,7 @@ class ssh::params {
     /^RedHat|CentOS/: {
       $package_name = 'openssh-server'
       $service_name = 'sshd'
-      notify {"${0} is our operating system. And ${1}"}
+      notify {"${1} is our operating system. And ${0}": }
     }
     default: {
       fail("${facts[::operatingsystem]} is not supporting !")
