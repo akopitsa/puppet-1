@@ -56,4 +56,5 @@ class ssh(
   -> Class['::ssh::config']
   ~> Class['::ssh::service']
   -> Class['ssh']
+  
 }
