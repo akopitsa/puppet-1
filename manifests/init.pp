@@ -77,5 +77,4 @@ Integer $port              = 22,
   -> Class['::ssh::config']
   ~> Class['::ssh::service']
   -> Class['ssh']
-
 }
